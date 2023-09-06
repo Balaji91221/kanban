@@ -110,9 +110,18 @@ function CardInfo(props) {
   };
 
   useEffect(() => {
-    if (props.updateCard) props.updateCard(props.boardId, values.id, values);
-  }, [values]);
-
+    if (props.updateCard) {
+      // Use functional update to update state based on previous state
+      setValues((prevValues) => {
+        if (prevValues.id !== values.id) {
+          // Only update if the card ID has changed to avoid infinite loop
+          return values;
+        }
+        return prevValues;
+      });
+    }
+  }, [props.updateCard, values]);
+  
   return (
     <Modal onClose={props.onClose}>
       <div className="cardinfo">
