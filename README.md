@@ -2,7 +2,7 @@
 
 This project is a simple Kanban board application built using React.js. Kanban boards are an effective way to manage and visualize tasks in a workflow, making it easy to track progress and collaborate with a team.
 
-**Demo**: [Kanban Board App Demo](https://64f8c5b31a9d4d000802edf7--comforting-belekoy-d90510.netlify.app/)
+**Demo**: [Kanban Board App Demo](https://kanban-board-balaji.netlify.app/)
 
 ## Features
 
